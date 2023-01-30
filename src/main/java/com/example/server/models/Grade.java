@@ -32,7 +32,9 @@ public class Grade {
     @JoinColumn(name = "lesson_id")
     private Lesson lesson;
 
-
+    @OneToOne
+    @JoinTable(name = "lesson")
+    private Time time;
 
 
 }
